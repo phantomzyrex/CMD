@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FFF8E7;
+  }
+}
+
+.font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-desi {
+  font-family: 'Rozha One', serif;
+}
+
+/* Neo-Brutalist hard shadows matching Bold Typography theme */
+.shadow-brutal-sm {
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.shadow-brutal {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.shadow-brutal-lg {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.shadow-brutal-xl {
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.shadow-brutal-orange {
+  box-shadow: 6px 6px 0px 0px rgba(234, 88, 12, 1);
+}
+
+.shadow-brutal-orange-lg {
+  box-shadow: 8px 8px 0px 0px rgba(234, 88, 12, 1);
+}
+
+/* Custom styles for print certificate */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #cmd-certificate, #cmd-certificate * {
+    visibility: visible;
+  }
+  #cmd-certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+  }
+}
+
+/* Shimmer and animation utilities */
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 3s ease-in-out infinite;
+}

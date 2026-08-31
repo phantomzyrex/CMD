@@ -1,0 +1,6 @@
+{
+  "name": "CMD - Calculate My Dahej",
+  "description": "Satirical startup and matrimonial market valuation calculator inspired by Satish Ray's Bihari Yuva comedy sketch, featuring comedic valuations, Sasurji negotiations, and anti-dowry awareness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
